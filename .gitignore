@@ -1,0 +1,31 @@
+﻿# Create .gitignore with all exclusions
+@"
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+.venv/
+rasaenv/
+
+# Rasa
+.rasa/
+models/
+results/
+
+# Temp files
+questions.txt
+run.txt
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
