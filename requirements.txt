@@ -1,0 +1,2 @@
+rasa==3.6.15
+# Add other dependencies if needed

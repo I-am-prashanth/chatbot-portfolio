@@ -1,0 +1,110 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: asking name
+  steps:
+  - intent: ask_name
+  - action: utter_name
+
+- rule: asking profession
+  steps:
+  - intent: ask_profession
+  - action: utter_profession
+
+- rule: asking qnique
+  steps:
+  - intent: ask_uniqueness
+  - action: utter_uniqueness
+
+- rule: what make you inspire
+  steps:
+  - intent: ask_inspiration
+  - action: utter_inspiration
+
+- rule: asking about skills
+  steps:
+  - intent: ask_skills
+  - action: utter_skills
+
+- rule: asking about future
+  steps:
+  - intent: ask_about_future
+  - action: utter_about_future
+
+- rule: asking about speaking
+  steps:
+  - intent: ask_languages
+  - action: utter_languages
+
+- rule: asking about projects
+  steps:
+  - intent: ask_projects
+  - action: action_projects
+
+- rule: asking about learing
+  steps:
+  - intent: ask_learning
+  - action: action_learn
+
+- rule: asking about family
+  steps:
+  - intent: ask_family
+  - action: actions_family
+
+- rule: asking about education
+  steps:
+  - intent: ask_education
+  - action: actions_education
+
+- rule: asking personal info
+  steps:
+  - intent: ask_data
+  - action: actions_personal_info
+
+- rule: asking personal experience
+  steps:
+  - intent: ask_experience
+  - action: actions_experience
+
+- rule: asking what i have learned
+  steps:
+  - intent: ask_what_you_learned
+  - action: actions_what_i_have_learned
+
+- rule: Handle low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Handle when used inproparate words
+  steps:
+  - intent: using_inproparate_words
+  - action: utter_bad_words
+
+- rule: appreciation the work
+  steps:
+  - intent: appreciation
+  - action: utter_thankyou
+
+- rule: appreciation the work
+  steps:
+  - intent: wishing_birthday
+  - action: utter_happy_birthday
+
+
+- rule: appreciation the work
+  steps:
+  - intent: negative_feedback
+  - action: utter_negative_feedback
+

@@ -1,0 +1,853 @@
+version: "3.1"
+
+nlu:
+
+# synonys
+
+- synonym: brother
+  examples: |
+    - bro
+    - anna
+
+- synonym: canteen
+  examples: |
+    - cantin
+    - canteen
+
+- synonym: college
+  examples: |
+    - Btech
+    - collage
+    - graduation
+    - graduate
+    - degree
+    - cse
+    - ece
+    - computer science
+    - IT
+    - eee
+    - university
+
+- synonym: complete
+  examples: |
+    - finish
+    - finished
+    - when
+    - passed
+
+- synonym: course
+  examples: |
+    - training
+    - work shop
+    - courses
+    - course
+
+- synonym: dsa
+  examples: |
+    - DSA
+    - coding
+    - programming
+    - code
+
+- synonym: education
+  examples: |
+    - study
+    - studies
+
+- synonym: family
+  examples: |
+    - family members
+    - relatives
+
+- synonym: father
+  examples: |
+    - dad
+    - daddy
+    - papa
+
+- synonym: full stack
+  examples: |
+    - web development
+    - MERN
+    - mern
+    - mern stack
+    - fullstack
+
+- synonym: girl friend
+  examples: |
+    - girlfriend
+    - GF
+    - gf
+    - lover
+    - love
+    - wife
+    - relation
+
+- synonym: git
+  examples: |
+    - github
+    - git hub
+    - code save
+
+- synonym: hackthons
+  examples: |
+    - online competitive
+    - compations
+    - hackathons
+
+- synonym: inter
+  examples: |
+    - intermediate
+    - inter college
+    - after 10th
+    - high school
+    - high schooling
+
+- synonym: insta
+  examples: |
+    - instagram
+
+- synonym: linkedin
+  examples: |
+    - linked in
+
+- synonym: mail
+  examples: |
+    - email
+    - gmail
+    - personal mail
+    - email address
+    - gmail address
+
+- synonym: message
+  examples: |
+    - msg
+    - text
+
+- synonym: major project
+  examples: |
+    - final year
+    - finalyear
+    - latest
+    
+- synonym: name
+  examples: |
+    - called
+    - names
+
+- synonym: phone
+  examples: |
+    - phone number
+    - contact number
+    - contact
+    - telephone number
+    - mobile number
+    - whatsup
+    - whats up
+    - whats app
+    - whatsup number
+    - whatsapp
+    - whatsapp number
+    - whatsapp account
+    
+- synonym: school
+  examples: |
+    - schooling
+    - primary education
+    - first school
+
+- synonym: sister
+  examples: |
+    - sis
+    - akka
+
+- synonym: time
+  examples: |
+    - days
+    - day
+    - months
+    - month
+    - years
+    - year
+
+- synonym: work
+  examples: |
+    - job
+    - profession
+    - occupation
+    - do
+    - doing
+
+
+# predefined intents
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - how did you built these chat bot?
+    - tell me about this chat bot?
+    - how much time it took to build these chat bot
+    - did you use nlp for this cht bot?
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+# user defined intents
+
+- intent: appreciation
+  examples: |
+    - good job
+    - i can see your hard work
+    - you are really hard working guy
+    - your are talanted
+    - nice chat bot
+    - i really liked your projects
+    - amazing work
+    - this is a good chatbot
+    - you are awesome
+    - great effort
+    - i'm impressed
+    - well done
+    - this is cool
+    - wow great work
+    - you did a nice job
+    - excellent project
+    - keep it up
+    - your bot is awesome
+    - fantastic work
+    - nice work man
+    - that’s impressive
+    - brilliant project
+
+
+- intent: ask_about_future
+  examples: |
+    - what are your goals?
+    - can you please share your goals
+    - plz tell me your goals
+    - what do you want to be?
+    - what are your future plans?
+    - What type of job are you looking for?
+    - what kid of job you want ?
+    - what are things you want see in your job?
+    - what do you want to achieve?
+    - where do you see yourself in the future?
+    - what is your long-term goal?
+    - what are you working towards?
+    - what is your dream job?
+    - what are your career ambitions?
+    - what is your future vision?
+    - what are your upcoming goals?
+    - what do you want to accomplish in your career?
+    - what are your professional goals?
+    - what motivates your future plans?
+    - what do you want to become in life?
+    - what are your plans for your career?
+    - what do you expect to be doing in a few years?
+    - how do you see your career growing?
+    - what future projects do you want to build?
+    - what’s next for you?
+    - what direction is your career heading?
+    - do you have any big goals?
+    - what are your learning goals?
+    - what challenges do you want to take up in the future?
+
+
+- intent: ask_data
+  examples: |
+    - tell me your [mail](data)?
+    - can you share your [linked in]?
+    - how can i [message](data) you?
+    - how can i [text](data) you?
+    - give me your [linkedin](data)
+    - what is your [phone number](data)?
+    - can you share your [whatsup](data) number?
+    - can you share your [insta](data) id?
+    - what is your [git hub](data) account?
+    - what is your [linked in](data) account?
+    - what is your fav [color](data)?
+    - could you share your [email](data) address?
+    - what's your [contact](data) address?
+    - do you have a preferred [color](data)?
+    - may I get your [mobile](data) number?
+    - tell me your company [email](data)
+    - what’s your go-to [color](data)?
+    - can you give me your [phone](data)?
+    - what [email](data) id should I use to reach you?
+    - which [color](data) do you like the most?
+    - what’s your [telephone ](data) number?
+    - can you provide your [contact](data) info?
+    - your favorite [color](data) shade?
+    - what’s your [gmail](data)?
+    - give me your [instagram](data) handle
+    - what’s your [twitter](data) username?
+    - do you have a [facebook](data) profile?
+    - what’s your [telegram](data) id?
+    - could you tell me your [whatsapp](data) number?
+    - please share your [github](data) link
+    - what’s your favorite [color](data) combo?
+    - Do you have any [live demos](data)?
+    - where can i see project [demos](data)?
+
+
+- intent: ask_education
+  examples: |
+    - Where did you do your [schooling](education)?
+    - tell me about your education?
+    - tell me about your [school](education) life?
+    - tell me about your [collage](education)  life?
+    - tell me about your [inter](education)  life?
+    - tell me about your [btech](education)?
+    - What did you [study](education)?
+    - what is your department in [engineering](education)?
+    - what is your branch in [btech](education)
+    - Are you a [computer science](education) student?
+    - where did you done your [btech](education)?
+    - where did you do [inter](education)?
+    - when did you [completed](complete) [inter](education)?
+    - when did you [completed](complete) [school](education)?
+    - [When](complete) did you [graduate](education)?
+    - Which [college](education) did you study in?
+    - From where did you complete your [graduation](education)?
+    - Where did you do your [masters](education)?
+    - Did you finish your [studies](education) in India?
+    - What [degree](education) did you pursue in college?
+    - Where did you [complete](complete) your [bachelor](education)?
+    - When did you [complete](complete) your [schooling](education)?
+    - What year did you [pass out](complete) from [college](education)?
+    - Which [university](education) did you attend?
+    - Did you choose [engineering](education) as your major?
+    - Where did you [finish](complete) your [education](education)?
+    - Did you study in a [private school](education) or government school?
+    - Did you attend a [boarding school](education)?
+    - What is your highest [qualification](education)?
+    - Where did you do your [undergraduation](education)?
+    - Which [department](education) were you in during college?
+    - Did you [complete](complete) your [degree](education) in the same city you grew up in?
+
+
+- intent: ask_experience
+  examples: |
+    - Where are you working?
+    - do you have any [internship](work)?
+    - your current status
+    - tell me your work [experience](work)?
+    - what is your job [experience](work)?
+    - have you done any [internships](work)?
+    - how much [experience](work) do you have?
+    - are you working anywhere currently?
+    - what kind of [work](work) have you done?
+    - do you have professional [experience](work)?
+    - what is your current job role?
+    - where did you do your [internship](work)?
+    - can you describe your [experience](work)?
+    - tell me about your past [work](work)
+    - how long have you been working?
+    - what is your previous job [experience](work)?
+
+
+- intent: ask_family
+  examples: |
+    - what is your [father](family_member)'s [name](info_type)?
+    - tell me [about](info_type) [father](family_member)?
+    - tell me [about](info_type) [mother](family_member)?
+    - tell me [about](info_type) [brother](family_member)?
+    - tell me [about](info_type) [family](family_member)?
+    - what is your [mother](family_member)'s [name](info_type)?
+    - what is your [brother](family_member)'s [name](info_type)?
+    - what is your [sister](family_member)'s [name](info_type)?
+    - tell me your [father](family_member)'s [name](info_type)
+    - can you tell me your [dad](family_member)'s [name](info_type)?
+    - what does your [father](family_member) [do](info_type)?
+    - what does your [mother](family_member) [do](info_type)?
+    - what does your [brother](family_member) [do](info_type)?
+    - what does your [sister](family_member) [do](info_type)?
+    - do you [have](info_type) any [siblings](family_member)?
+    - do you [have](info_type) a [brother](family_member)?
+    - do you [have](info_type) a [sister](family_member)?
+    - who is your [father](family_member)?
+    - tell me about your [parents](family_member)?
+    - tell me your [parents](family_member) [names](info_type)?
+    - who is your [mother](family_member)?
+    - tell me about your [family](family_member)
+    - tell me about your [family members](family_member)
+    - what is your [girl friend](family_member) name?
+    - do you have [GF](family_member)?
+    - what is your [gf](family_member) name?
+    - 
+
+
+- intent: ask_inspiration
+  examples: |
+    - what inspires you?
+    - What do you enjoy working on the most?
+    - what  you are so inspired
+    - what do you enjoy in working?
+    - what kind of work do you enjoy the most?
+    - which type of work excites you?
+    - what do you love to work on?
+    - what tasks make you feel motivated?
+    - what type of projects do you enjoy working on?
+    - what work do you find the most interesting?
+    - what do you like doing at work?
+    - which work makes you feel energized?
+    - what do you feel happiest working on?
+    - what kind of tasks do you enjoy?
+    - what is your inspiration?
+    - who inspires you the most?
+    - what keeps you motivated?
+    - what motivates you to code?
+    - why did you choose this field?
+    - where do you get your ideas from?
+    - what drives you to work hard?
+    - how do you stay motivated?
+    - what encourages you to build projects?
+    - who do you look up to?
+    - what is the source of your creativity?
+    - what keeps you going?
+    - why do you love developing?
+    - what got you into programming?
+    - what inspires your projects?
+    - why are you so passionate about tech?
+    - how do you do so much work bro?
+    - how do you stay so focused?
+    - who is your biggest inspiration?
+    - what made you become a developer?
+    - how do you stay motivated to learn new things?
+    - what gives you the energy to keep building?
+
+
+- intent: ask_languages
+  examples: |
+    - what languages can you speak?
+    - which languages do you know?
+    - what is your mother tongue
+    - what languages can you communicate in?
+    - do you speak English?
+    - do you know any other languages?
+    - what human languages do you speak?
+    - can you speak multiple languages?
+    - are you multilingual?
+    - do you speak Hindi?
+    - do you speak Telugu?
+    - which languages are you fluent in?
+    - tell me the languages you know
+    - how many languages can you speak?
+    - what languages do you understand?
+    - which languages can you talk in?
+    - can we talk in other languages?
+    - do you speak regional languages?
+    - can you switch to another language?
+    - what languages are you comfortable with?
+    - can you speak my language?
+    - do you speak Tamil?
+    - do you speak Kannada?
+    - do you speak Malayalam?
+    - do you speak any Indian languages?
+
+
+- intent: ask_learning
+  examples: |
+    - Where did you learn?
+    - How did you learn these skills?
+    - how many [days]time it took to learn [dsa](course?
+    - how many [years]time it took to learn [full stack](course)?
+    - Where did you learn all this?
+    - Where did you learn [full stack development](courses)?
+    - How much [time](time) did it take to learn [full stack](courses)?
+    - Where did you learn [DSA](courses)?
+    - Did you take any additional learning [programs](courses)?
+    - Did you complete any online [courses](courses)?
+    - Did you buy any [paid](courses) courses?
+    - From where did you gain these skills?
+    - Did you take any extra [courses](courses)?
+    - Do you learn from online [platforms](courses) like Udemy or Coursera?
+    - Are you still learning [new technologies](future)?
+    - Are you learning [new things](future)?
+    - Did you complete any [certifications](courses)?
+    - Have you attended any tech [workshops](workshops)?
+    - Have you done any coding [bootcamps](courses)?
+    - Do you prefer online [courses](courses) or offline classes?
+    - What are your learning [sources](courses)?
+    - Where do you improve your skills?
+    - What type of [training](courses) have you done?
+    - How do you stay updated with new technologies?
+    - Are you taking any current learning programs?
+    - Who taught you programming?
+    - Did you attend any bootcamps?
+    - How did you start learning to code?
+    - Did you learn development from college or online learning?
+    - Where did you practice your coding skills?
+    - Do you study using [YouTube](courses) tutorials?
+    - Did you attend any [workshops](courses)?
+    - Did you participate in any [hackathons](courses)?
+    - How long did it take you to learn [web development](courses)?
+    - How much [time](time) did you spend learning [DSA](courses)?
+    - Did you learn [React](courses) in college or outside?
+    - Where did you learn [machine learning](courses)?
+    - How did you learn to build [chatbots](courses)?
+    - Are you currently learning in your free [time](time)?
+    - How much [time](time) do you spend learning every day?
+    - Did you learn [coding basics](courses) from school?
+    - How much [time](time) did you spend improving your [skills](courses)?
+    - Where did you learn to build full-stack [projects](courses)?
+    - Did you join any [communities](courses) like Discord or GitHub to learn?
+    - Do you attend [tech meetups](courses) to learn?
+
+
+- intent: ask_name
+  examples: |
+    - what is your name?
+    - Describe yourself in a few words
+    - tell me about yourself in few words
+    - introduce yourself
+    - can you tell me about your self
+    - tell me your name?
+    - who are you?
+    - may I know your name?
+    - what should I call you?
+    - do you have a name?
+    - how do I address you?
+    - what's your bot name?
+    - are you a chatbot? what's your name?
+    - can you introduce yourself?
+    - what do people call you?
+    - give me your name
+    - name?
+    - who am I talking to?
+    - let me know your name
+    - can you tell me what you're called?
+    - do you go by a name?
+    - identify yourself
+    - Who is this portfolio about?
+    - Tell me about the person behind this portfolio
+    - What’s your background?
+
+
+- intent: ask_profession
+  examples: |
+    - what do you do?
+    - did you got any job?
+    - did you got any offer
+    - what are you doing right now?
+    - are you a student?
+    - what is your profession?
+    - are you working or studying?
+    - what kind of job do you have?
+    - what do you do for a living?
+    - what field are you in?
+    - what’s your role?
+    - what work do you do?
+    - are you a software developer?
+    - do you work as a programmer?
+    - are you employed?
+    - do you have a full-time job?
+    - what’s your current position?
+    - what’s your job title?
+    - are you a freelancer?
+    - what industry do you work in?
+    - do you work in tech?
+    - do you take projects?
+    - are you looking for a job?
+    - are you a full stack developer?
+    - what do you specialize in?
+    - do you build websites?
+    - do you build chatbots?
+    - are you doing an internship?
+    - what do you like working on?
+    - do you have professional experience?
+    - what company do you work for?
+    - what’s your area of expertise?
+    - what’s your career path?
+    - are you still studying?
+    - are you a graduate?
+    - what course are you studying?
+    - do you have a job in software?
+    - do you work remotely?
+    - do you currently have clients?
+    - what do you do as a developer?
+    - what is your role in development?
+    - do you have a programming job?
+    - Are you open to new opportunities?
+
+
+- intent: ask_projects
+  examples: |
+    - tell me about projects?
+    - what projects have you worked on?
+    - can you describe your projects?
+    - show me your project details
+    - explain your projects
+    - list your previous projects
+    - give me information about your projects
+    - I want to know about your projects
+    - what are your major projects?
+    - do you have any portfolio projects?
+    - talk about the projects you completed
+    - share your project experience
+    - what kind of projects have you done?
+    - tell me your [best](projects) project
+    - tell me your [canteen](projects) project
+    - tell me your [worst](projects) projects
+    - which project do you think is your [worst](projects) projects
+    - tell me your [mini](projects) project
+    - tell me your [first](projects) project
+    - Did you complete a [final year](projects) project?
+    - can you walk me through your projects?
+
+
+- intent: ask_skills
+  examples: |
+    - what are your skills?
+    - What kind of work do you do?
+    - What kind of work you good at?
+    - Are you a full-stack developer?
+    - what do you know?
+    - Do you work with Machine Learning?
+    - do you know ml?
+    - can you work with ML
+    - what technologies do you use?
+    - what tech stack do you have?
+    - what programming languages do you know?
+    - what tools are you good at?
+    - what technologies are you familiar with?
+    - do you know React?
+    - do you know Next.js?
+    - are you a full stack developer?
+    - what frameworks have you worked with?
+    - what databases do you use?
+    - what are your technical skills?
+    - what skills do you have as a developer?
+    - do you know JavaScript?
+    - can you build websites?
+    - are you good at backend development?
+    - can you design user interfaces?
+    - what front-end skills do you have?
+    - what back-end skills do you have?
+    - do you work with APIs?
+    - are you good with Git?
+    - which creative tools do you use?
+    - which skills are your strongest?
+    - what skills are you currently learning?
+    - do you build chatbots?
+    - can you work with cloud platforms?
+    - do you know TypeScript?
+    - do you use Tailwind CSS?
+    - do you know Python?
+    - what are your development skills?
+    - what kind of developer are you?
+    - are you good at UI development?
+    - can you build full stack apps?
+    - how skilled are you in coding?
+    - list your skills
+    - what competencies do you have?
+    - what can you do in software development?
+    - show me your tech stack
+    - do you have any AI or ML skills?
+
+
+- intent: ask_uniqueness
+  examples: |
+    - what makes you unique?
+    - what is unique about you?
+    - what sets you apart from others?
+    - how are you different from others?
+    - what makes you different?
+    - what makes you special?
+    - why should someone choose you?
+    - what is your uniqueness?
+    - what is something different about you?
+    - what’s special about your skills?
+    - why are you better than others?
+    - how do you stand out from the crowd?
+    - what makes your work unique?
+    - do you have anything special that others don’t?
+    - tell me something unique about you
+    - what’s your best quality?
+    - what’s your competitive advantage?
+    - why are your projects unique?
+    - how are your skills different from other developers?
+    - why should I pick you for a job?
+    - what strengths make you stand out?
+    - what makes your portfolio unique?
+
+
+- intent: ask_what_you_learned
+  examples: |
+    - What did you learn from your [projects](data)?
+    - What did you learn from your [btech](data)?
+    - What did you learn from your [live](data)?
+    - what have learn in your [life](data)?
+    - What did you learn from your [school](data)?
+    - What did you learn from your [inter](data)?
+    - What skills did you gain from your [btech](data)?
+    - What knowledge did you get from your [school](data)?
+    - What new things did you learn in your [inter](data)?
+    - How did your [projects](data) help you improve?
+    - What was your biggest takeaway from your [school](data)?
+    - Which skills did you develop during your [inter](data)?
+    - What practical experience did you gain from your [projects](data)?
+    - How did your [btech](data) help in your growth?
+    - What did you improve while studying in [inter](data)?
+    - How did your [school](data) help you learn discipline?
+    - What did you learn by completing your [projects](data)?
+    - What did you gain from studying in [btech](data)?
+    - What key lessons did your [school](data) teach you?
+
+
+- intent: ask_project_count
+  examples: |
+    - How many projects have you done?
+    - Number of projects you completed?
+    - How many mini projects did you build?
+    - Total projects in your BTech?
+    - Have you built a chatbot before?
+    - have built full stack projects before
+
+
+- intent: negative_feedback
+  examples: |
+    - I did not like you
+    - I don't like this chatbot
+    - I hate this chatbot
+    - I hate these chat bots
+    - I did not like your projects
+    - your projects are not good
+    - I am not impressed
+    - this is bad
+    - this is the worst bot
+    - I don't like your answers
+    - I don’t like the way you respond
+    - I didn’t enjoy this chat
+    - this is useless
+    - you are not helpful
+    - this is disappointing
+    - I am unhappy with this
+    - I didn't like your response
+
+
+- intent: using_inproparate_words
+  examples: |
+    - fuck you
+    - f**k you
+    - f* you
+    - shut up
+    - you are stupid
+    - you are useless
+    - you are an idiot
+    - you are dumb
+    - get lost
+    - I hate you
+    - you're so dumb
+    - this bot is shit
+    - you are trash
+    - this is bullshit
+    - what the hell is this
+    - stupid bot
+    - worst bot ever
+    - you don't know anything
+    - ass hole
+    - mother fucker
+    - idiot
+    - dengey
+
+
+- intent: wishing_birthday
+  examples: |
+    - today is my birthday
+    - it's my birthday
+    - guess what? it's my birthday
+    - today i am celebrating my birthday
+    - my birthday is today
+    - it's my bday
+    - today is my bday
+    - it's my happy birthday
+    - i'm turning a year older today
+    - i was born on this day
+    - it’s my special day
+    - it's birthday time
+
+
+

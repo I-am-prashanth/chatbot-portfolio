@@ -1,0 +1,158 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_data
+  - ask_education
+  - ask_experience
+  - ask_inspiration
+  - ask_learning
+  - ask_name
+  - ask_profession
+  - ask_project_count
+  - ask_projects
+  - ask_skills
+  - ask_what_you_learned
+  
+
+entities:
+  - attend
+  - complete
+  - courses
+  - data
+  - education
+  - family_member
+  - info_type
+  - projects
+  - workshops
+  - time
+  
+actions:
+  - action_data
+  - actions_education
+  - actions_experience
+  - actions_family
+  - action_learn
+  - actions_personal_info
+  - action_projects
+  - actions_what_i_have_learned
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+    image: "hi"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "awesome, carry on!"
+    image: "cool1"
+
+  utter_goodbye:
+  - text: "Bye"
+    image: "hi3"
+
+  utter_iamabot:
+    - text: |
+        Hi, this is my chatbot powered by Rasa.
+        If you want a chatbot like this, feel free to contact me:
+        • Email: prashanthpathigari@gmail.com
+        • Tech Stack Available: NLP, Web, and AI based bots
+      image: "cool2"
+
+  utter_name:
+  - text: "hello their I am prashanth kumar currently persuing btech final year in CVR collage"
+    image: "hi"
+
+  utter_profession:
+  - text: "rightnow i am final year(ECE) student in cvr collage of enginnering, currently looking for good opportunities"
+    image: "cool1"
+
+  utter_uniqueness:
+    - text: |
+        I may be a simple coder, but I do have strengths that make me unique:
+        • Strong problem-solving ability
+        • Passion for building intelligent chatbots
+        • Quick learning and adaptability
+        • Always eager to improve and innovate
+      image: "hi"
+  
+  utter_inspiration:
+  - text: "I’m inspired by solving real problems with technology and creating products that make people’s lives easier. I love learning new things and improving every day!"
+    image: "cool2"
+  
+  utter_skills:
+    - text: |
+        I like working with
+        • DSA: Java, Python
+        • Web Development: MERN
+        • CSS: Tailwind, Bootstrap
+        • Frontend: React, Next.js with JavaScript, TypeScript
+        • Backend: Express, Node.js, Mongoose
+        • Database: SQL, MongoDB
+        • ML: NLP
+      image: "hi"
+
+  
+  utter_about_future:
+  - text: |
+      My future goals are:
+      • Live a secure and financially free life
+      • Build multiple income sources
+      • Start freelancing and grow as a developer
+      • Get a stable and secure job
+      • Learn about stocks and smart investments
+    image: "cool1"
+  
+  utter_languages:
+  - text: "I very good at \n Telugu(mother tongue) \n hindi \n English"
+    image: "allthebest"
+
+  utter_exprience:
+  - text: "I don't have any working exprience but i have almost year of exprience in webdevlopment and currently learning creating chatbots and llm"
+    image: "hi"
+  
+  utter_project_count:
+  - text: "I done more that 5 full stack project , 3 chat bot project i am still doing them some of them are \n"
+
+  utter_bad_words:
+    - text: "I am so sorry if I hurted "
+      image: "cry"
+
+  utter_default:
+    - text: "That's hurts bro"
+      image: "low"
+  
+  utter_thankyou:
+    - text: "That's you so much it means a lot for me"
+      image: "prayer"
+  
+  utter_happy_birthday:
+    - text: "wishing you a very happy birthday"
+      image: "birthday2"
+
+  
+  utter_negative_feedback:
+    - text: |
+          I'm sorry to hear that 😔
+          I’m still learning. If you tell me what you didn’t like, I can try to improve my answer.
+          You can leave a feedback I always reads them , It will be really helpful for me
+          thankyou
+      image: "low1"
+
+# utter_happy_birthday
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

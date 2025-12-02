@@ -1,0 +1,17 @@
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# tracker_store:
+#   type: SQL
+#   dialect: "sqlite"
+#   url: "tracker.db"
+
+# lock_store:
+#   type: SQL
+#   dialect: "sqlite"
+#   url: "lock.db"
+
+# event_broker:
+#   type: SQL
+#   dialect: "sqlite"
+#   url: "events.db"
