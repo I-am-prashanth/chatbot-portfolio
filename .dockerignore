@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+.env
+.git
+*.egg-info
+node_modules
+.vscode

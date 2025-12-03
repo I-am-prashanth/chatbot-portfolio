@@ -1,0 +1,25 @@
+# Dockerfile.rasa
+FROM python:3.10-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential git curl gcc && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy rasa project
+COPY rasa/ /app/
+
+# Install Rasa and extra requirements
+COPY rasa/requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# (Optional) Train model during build if you want a built image with a model
+# This requires training data present in /app/data
+RUN rasa train --no-prompt || echo "training failed - model may be provided at runtime"
+
+EXPOSE 5005
+
+# Use the environment variables to control server behavior
+CMD ["bash", "-lc", "rasa run --enable-api --cors \"*\" --port ${RASA_PORT:-5005} --debug"]

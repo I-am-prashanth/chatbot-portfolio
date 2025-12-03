@@ -1,0 +1,15 @@
+# Dockerfile.actions
+FROM python:3.10-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY actions/ /app/
+
+COPY actions/requirements.txt /tmp/req.txt
+RUN pip install --no-cache-dir -r /tmp/req.txt
+
+EXPOSE 5055
+CMD ["bash", "-lc", "rasa run actions --port ${ACTIONS_PORT:-5055} --debug"]

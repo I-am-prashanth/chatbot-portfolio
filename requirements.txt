@@ -1,2 +1,2 @@
-rasa==3.6.15
-# Add other dependencies if needed
+rasa==3.6.0       # or the exact Rasa version you use
+# any other dependencies like tensorflow, spacy etc (be careful: large)
